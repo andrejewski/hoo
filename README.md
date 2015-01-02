@@ -1,10 +1,10 @@
 Hoo
 ===
 
-A contact information scrapping tool for programmatic and command-line use. Hoo will scrap webpages looking for personal websites, email addresses, Twitter handles, and Github usernames and returns completed user profiles in JSON or CSV.
+A contact information scrapping tool for programmatic and command-line use. Hoo will scrape webpages looking for personal websites, email addresses, Twitter handles, and Github usernames and returns completed user profiles in JSON or CSV.
 
 ```bash
-npm i -g hoo
+npm install -g hoo
 ```
 
 ## Command-line Usage
@@ -116,7 +116,7 @@ hoo.run(names, function(error, records) {
 
 Hoo includes Email (Default), Twitter, and Github web scrappers, but that doesn't mean new ones cannot be made. In fact that is why they all extend the same base `Scrapper` class. Building a new scrapper is easy.
 
-```
+```js
 var Scrapper = require('hoo').Scrapper;
 
 class MyScrapper extends Scrapper {

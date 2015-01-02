@@ -1,6 +1,6 @@
 {
   "name": "hoo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "command-line contact information scrapper",
   "main": "lib/index.js",
   "bin": {
